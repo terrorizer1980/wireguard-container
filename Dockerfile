@@ -7,7 +7,7 @@ RUN apt-get update && \
 FROM ubuntu:focal
 
 RUN apt-get update && \
-    apt-get install -y iproute2 iptables && \
+    apt-get install -y iproute2 iptables tcpdump && \
     rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /usr/bin/wg /usr/bin/wg-quick /usr/bin/
