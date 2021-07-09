@@ -11,3 +11,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /usr/bin/wg /usr/bin/wg-quick /usr/bin/
+COPY 20-wireguard.conf /etc/sysctl.d/
