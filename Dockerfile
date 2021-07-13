@@ -5,3 +5,5 @@ RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/v3.14/community" >> /e
 RUN apk update \
     && apk upgrade \
     && apk add wireguard-tools iptables libqrencode sed
+
+COPY wg-client-gen.sh /usr/local/bin
