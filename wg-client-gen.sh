@@ -13,7 +13,7 @@ CLIENT_CFG=$(cat << EOF
 [Interface]
 PrivateKey = $PRIVKEY
 Address = $CLIENT_IP/24
-DNS = 192.168.0.254
+DNS = 192.168.0.35
 
 [Peer]
 PublicKey = 14YhHPvnqOCNcGlmxmvMlcrhzXo3tC+q+oXZlA3Xjlk=
